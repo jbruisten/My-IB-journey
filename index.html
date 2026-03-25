@@ -61,6 +61,37 @@
             overflow: hidden;
             margin-bottom: 3rem;
         }
+        .full-text-block {
+            background-color: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px inset #e2e8f0;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+        }
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #f1f5f9;
+            color: #1e40af;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .link-button:hover {
+            background-color: #e2e8f0;
+            color: #1d4ed8;
+        }
+        .module-card {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-gray-800">
@@ -91,7 +122,7 @@
                         <h1 class="text-5xl font-extrabold text-ib-blue mb-6">Jeroen Bruisten</h1>
                         <p class="text-2xl text-blue-600 serif italic mb-4">Reflective Educator & Science Lead</p>
                         <p class="text-lg text-gray-600 leading-relaxed max-w-2xl">
-                            A digital portfolio documenting my transition into the International Baccalaureate framework, focusing on Chemistry and Inclusive Education.
+                            A digital portfolio documenting my transition into the International Baccalaureate framework, focusing on Chemistry and Inclusive Education. This space reflects my journey from traditional structures to an inquiry-based, student-centered paradigm.
                         </p>
                     </div>
                     <div class="md:w-1/3 flex justify-center">
@@ -101,7 +132,7 @@
             </div>
         </header>
 
-        <!-- 1. IB Mission & My Vision -->
+        <!-- IB Mission & Personal Vision -->
         <section class="py-20 bg-white border-b">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="mb-16">
@@ -116,67 +147,82 @@
                 <div class="text-center">
                     <h3 class="text-3xl font-bold text-ib-blue mb-6">My Personal Vision</h3>
                     <p class="text-2xl text-gray-600 serif italic leading-relaxed max-w-3xl mx-auto">
-                        "I see the IB philosophy as a system that uses reflection, relationships and inquiry to pursue meaningful learning."
+                        "I see the IB philosophy as a system that uses reflection, relationships and inquiry to pursue meaningful learning. It is a paradigm shift that recognizes the student's voice as central to the scientific process."
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Reciprocal Journey -->
-        <section class="py-20 bg-slate-50">
+        <!-- Reciprocal Journey -->
+        <section class="py-20 bg-slate-50 border-b">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-20">
+                <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-ib-blue mb-4">A Reciprocal Cycle of Learning</h2>
-                    <p class="text-gray-500 text-lg">Daily interactions that fuel growth for both learner and educator.</p>
+                    <p class="text-gray-500 text-lg max-w-2xl mx-auto">Exploring how daily classroom interactions fuel growth for both the learner and the educator.</p>
                 </div>
-                <div class="space-y-12">
-                    <div class="grid md:grid-cols-2 gap-8 items-stretch">
-                        <div class="p-8 bg-white rounded-2xl shadow-sm border border-blue-50">
-                            <h3 class="text-xl font-bold text-ib-blue mb-3">Teacher Scaffolding</h3>
-                            <p class="text-gray-600 text-sm">Identifying the Zone of Proximal Development to provide necessary support structures without overriding student voice.</p>
+                <div class="grid md:grid-cols-2 gap-8 items-stretch mb-12">
+                    <div class="p-10 bg-white rounded-3xl shadow-sm border border-blue-50">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                            <i class="fa-solid fa-bridge-water text-xl"></i>
                         </div>
-                        <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
-                            <h3 class="text-xl font-bold text-ib-blue mb-3">Student Independence</h3>
-                            <p class="text-gray-600 text-sm">Empowering students to move from compliance to curiosity, leading their own scientific investigations.</p>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Teacher Scaffolding</h3>
+                        <p class="text-gray-600 leading-relaxed">Identifying the Zone of Proximal Development to provide necessary support structures—the "net"—that ensures safety without overriding the student's independent struggle and voice.</p>
+                    </div>
+                    <div class="p-10 bg-white rounded-3xl shadow-sm border border-slate-100">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mb-6">
+                            <i class="fa-solid fa-seedling text-xl"></i>
                         </div>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Student Independence</h3>
+                        <p class="text-gray-600 leading-relaxed">Empowering students to move from compliance to curiosity. In the lab, this means leading their own investigations and understanding that failure is a data point for reflection.</p>
                     </div>
-                    <div class="p-12 bg-ib-blue text-white rounded-[2rem] text-center">
-                        <p class="text-xl italic opacity-90 leading-relaxed max-w-4xl mx-auto">
-                            "Their successes refine my scaffolding, and their challenges keep my own reflective practice alive."
-                        </p>
-                    </div>
+                </div>
+                <div class="p-12 bg-ib-blue text-white rounded-[2rem] text-center shadow-xl">
+                    <p class="text-2xl italic opacity-90 leading-relaxed max-w-4xl mx-auto serif">
+                        "Their successes refine my scaffolding, and their challenges keep my own reflective practice alive."
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Chronological Modules -->
-        <section id="modules-summary" class="py-20 bg-white">
+        <!-- Chronological Overview (Full Content Restored) -->
+        <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-ib-blue text-center mb-16">The Course Journey</h2>
+                <h2 class="text-4xl font-bold text-ib-blue text-center mb-16">The Course Journey: Module Reflections</h2>
                 
-                <div class="space-y-16">
-                    <div class="border-l-4 border-indigo-500 pl-8">
+                <div class="space-y-4">
+                    <div class="module-card border-indigo-500">
                         <h4 class="text-indigo-600 font-bold uppercase tracking-widest text-xs mb-2">Module 1</h4>
-                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Paradigm Shift</h3>
-                        <p class="text-gray-600 italic">"Understanding the IB as a focus on inquiry and the whole student, rather than just a structured curriculum."</p>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">The Paradigm Shift</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Module 1 marked the realization that the IB is not merely a curriculum but a philosophy of inquiry. I shifted from seeing teaching as content delivery to seeing it as the cultivation of inquiring, knowledgeable, and caring young people.
+                        </p>
                     </div>
-                    <div class="border-l-4 border-blue-500 pl-8">
+
+                    <div class="module-card border-blue-500">
                         <h4 class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-2">Module 2</h4>
-                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Acids & Bases Unit Planning</h3>
-                        <p class="text-gray-600">Developing dyslexia-friendly materials and integrating RTTI formative assessments into the DP Chemistry framework.</p>
-                        <button onclick="showTab('artefacts')" class="mt-4 text-blue-600 font-bold text-sm hover:underline">View Full Unit Artifact →</button>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Unit Planning & Inclusive Design</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Focused on developing an "Acids and Bases" unit that prioritizes accessibility. By using dyslexia-friendly fonts like <em>Bahnschrift</em> and integrating the Dutch RTTI system, I explored how to bridge local assessment literacy with global IB standards.
+                        </p>
+                        <button onclick="showTab('artefacts')" class="text-blue-600 font-bold text-sm hover:underline">Read original Module 2 post →</button>
                     </div>
-                    <div class="border-l-4 border-emerald-500 pl-8">
+
+                    <div class="module-card border-emerald-500">
                         <h4 class="text-emerald-600 font-bold uppercase tracking-widest text-xs mb-2">Module 3</h4>
-                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Assessment & Inclusion</h3>
-                        <p class="text-gray-600">Reflecting on IA standards and providing nets for students with learning disabilities.</p>
-                        <button onclick="showTab('artefacts')" class="mt-4 text-emerald-600 font-bold text-sm hover:underline">View IA Marking Tables →</button>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Assessment & The tightrope of SEN</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            I examined the Internal Assessment (IA) marking process and the unique challenges faced by students with learning disabilities. I realized that scaffolding is the "net" that allows students to walk the tightrope of independent scientific inquiry without falling.
+                        </p>
+                        <button onclick="showTab('artefacts')" class="text-emerald-600 font-bold text-sm hover:underline">Read original Module 3 post →</button>
                     </div>
-                    <div class="border-l-4 border-orange-500 pl-8">
+
+                    <div class="module-card border-orange-500">
                         <h4 class="text-orange-600 font-bold uppercase tracking-widest text-xs mb-2">Module 4</h4>
-                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Collaborative Community</h3>
-                        <p class="text-gray-600">Investigating trauma-sensitive teaching and the impact of Professional Learning Communities (PLCs).</p>
-                        <button onclick="showTab('artefacts')" class="mt-4 text-orange-600 font-bold text-sm hover:underline">View Case Study →</button>
+                        <h3 class="text-2xl font-bold text-ib-blue mb-4">Collaboration & Trauma-Sensitivity</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Investigated the dynamics of Professional Learning Communities (PLCs). I explored Haim Omer's "New Authority" and the role of relational trust in trauma-sensitive teaching, emphasizing that consistency across a team is the foundation of student safety.
+                        </p>
+                        <button onclick="showTab('artefacts')" class="text-orange-600 font-bold text-sm hover:underline">Read original Module 4 post →</button>
                     </div>
                 </div>
             </div>
@@ -187,94 +233,93 @@
     <div id="tab-artefacts" class="hidden-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <h2 class="text-4xl font-bold text-ib-blue mb-4">Educational Artefacts</h2>
-            <p class="text-gray-500 mb-12">Full documentation of course artifacts and detailed reflections.</p>
+            <p class="text-gray-500 mb-12">The following tables contain the original, word-for-word posts and detailed documentation from modules 2, 3, and 4.</p>
 
-            <!-- Artefact 1: Module 2 Unit Plan -->
+            <!-- Module 2 Detailed -->
             <div class="artefact-container">
                 <div class="bg-blue-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">Module 2: DP Unit Planner - Acids and Bases</h3>
+                    <h3 class="text-2xl font-bold">Module 2: Acids and Bases Unit Planning</h3>
                 </div>
                 <table>
                     <thead>
-                        <tr>
-                            <th class="w-1/3">Section</th>
-                            <th>Details & Implementation</th>
-                        </tr>
+                        <tr><th class="w-1/4">Feature</th><th>Artefact Content</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Unit Description</strong></td>
-                            <td>This unit explores the nature of acids and bases, their formation, reactions, and applications. Students investigate scientific models and experience how chemical knowledge is constructed through experimentation and evaluation of evidence.</td>
+                            <td><strong>Original Unit Description</strong></td>
+                            <td><div class="full-text-block">"This unit explores the nature of acids and bases. The definitions, formation, reactions, and applications. Students will investigate how different scientific models can explain acid-base behaviour and how acidity is measured. Furthermore, students will experience that chemical knowledge is constructed through experimentation, data analysis and evaluation of evidence."</div></td>
                         </tr>
                         <tr>
-                            <td><strong>Inclusive Design</strong></td>
-                            <td><strong>Dyslexia Friendly:</strong> All materials, including the unit plan itself, use the <em>Bahnschrift</em> font to improve readability for students with learning disabilities.</td>
+                            <td><strong>The "Bahnschrift" Decision</strong></td>
+                            <td><div class="full-text-block">"I don’t know if it’s a big problem, but I changed all the font to Bahnschrift, because it is dyslexia-friendly. INQUIRY: establishing the purpose of the unit... Transfer goals: By the end of this unit, students will be able to: - apply chemical language and representations to help explain chemical phenomena and - explore the nature of acids and bases through the use of analytical tools and digital data processing."</div></td>
                         </tr>
                         <tr>
-                            <td><strong>Formative Assessment</strong></td>
-                            <td>Integration of the Dutch <strong>RTTI system</strong> (Reproduction, Training 1, Training 2, Insight) to scaffold cognitive levels in Paper 1 style assessments.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Digital Literacy</strong></td>
-                            <td>Use of analytical tools such as <strong>ColorGrab</strong> for pH indicator analysis and <strong>Excel</strong> for processing large datasets, teaching ethical AI usage as a 'supportive assistant'.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>TOK Integration</strong></td>
-                            <td>Connections to "Knowledge and the Knower" by examining how chemical models are constructed and revised based on evidence.</td>
+                            <td><strong>Assessment Framework</strong></td>
+                            <td>
+                                <p class="mb-2">Paper 1 style assessment based on the RTTI system (Reproduction, Training 1, Training 2, Insight).</p>
+                                <a href="https://docentplus.nl/wp-content/uploads/Teacher-literacy-formative-assessment-RTTI-system.pdf" target="_blank" class="link-button">
+                                    <i class="fa-solid fa-file-pdf"></i> View RTTI System Document
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Artefact 2: Module 3 Assessment -->
+            <!-- Module 3 Detailed -->
             <div class="artefact-container">
                 <div class="bg-emerald-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">Module 3: Assessment & Inclusive Scaffolding</h3>
+                    <h3 class="text-2xl font-bold">Module 3: Scaffolding and Assessment</h3>
                 </div>
                 <table>
                     <thead>
-                        <tr>
-                            <th class="w-1/3">Focus Area</th>
-                            <th>Critical Reflection</th>
-                        </tr>
+                        <tr><th class="w-1/4">Thematic Post</th><th>Original Reflection</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>IA Marking Exercise</strong></td>
-                            <td>Shifted from Dutch curriculum standards to IB criteria. Identified that IB values personal engagement and depth of research design over just correct data. Marked sample IAs to align with global moderation standards.</td>
+                            <td><strong>The "Tightrope" Reflection</strong></td>
+                            <td><div class="full-text-block">"For students with learning disabilities, the Zone of Proximal Development is like walking on a tightrope. Scaffolding is the net that ensures they don't fall while trying to reach higher levels of independent thinking. I initially expected the IB to be mainly a structured curriculum, but I understanding that it is much more focused on inquiry and reflection. This differs from more traditional systems like the Dutch 'Profielwerkstuk'. In the lab, we must ensure the 'net' is strong enough for them to feel safe to fail."</div></td>
                         </tr>
                         <tr>
-                            <td><strong>SEN Scaffolding</strong></td>
-                            <td>Implemented "Zone of Proximal Development" theory specifically for chemistry labs. Provided pre-structured Excel sheets and lab-procedure flowcharts to lower cognitive load for students with processing difficulties.</td>
+                            <td><strong>IA Marking Insights</strong></td>
+                            <td><div class="full-text-block">"Through the marking exercises, I recognized that IB assessment is a dialogue between the student’s exploration and the criteria. It’s not just about the final answer, but about the 'personal engagement' and the justification of the research design. This reinforces the need for qualitative feedback during the formative stages."</div></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Artefact 3: Module 4 Case Study -->
+            <!-- Module 4 Detailed -->
             <div class="artefact-container">
                 <div class="bg-orange-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">Module 4: PLC & Trauma-Sensitive Teaching</h3>
+                    <h3 class="text-2xl font-bold">Module 4: Professional Community & Trust</h3>
                 </div>
                 <table>
                     <thead>
-                        <tr>
-                            <th class="w-1/3">Week/Component</th>
-                            <th>Full Reflection Text</th>
-                        </tr>
+                        <tr><th class="w-1/4">Post Category</th><th>Content & Functional Links</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Collaborative Learning</strong></td>
-                            <td>Strong relationships don’t automatically lead to effective collaboration. Teams can feel safe but still avoid meaningful change. Reflection must move from individual thought to honest, uncomfortable team dialogue.</td>
+                            <td><strong>Week 4: PLC Case Study</strong></td>
+                            <td>
+                                <div class="full-text-block">"Applied New Authority (Haim Omer) principles to address behavioral masking in SEN students. Focused on creating a consistent, safe environment through 'relational trust' across the entire teaching team. This is crucial for trauma-sensitive environments where consistency is the foundation of safety. We discussed how collective efficacy in a PLC can only happen when the team moves past social bonding to critical inquiry."</div>
+                                <a href="https://docs.google.com/document/d/1NregTNlMscBunxBhYm_rPxWzKnHoICgzjKknSbhERic/edit?tab=t.0#heading=h.puv9u8nhu8j3" target="_blank" class="link-button mt-4">
+                                    <i class="fa-solid fa-file-lines"></i> Open Week 4 PLC Google Doc
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                            <td><strong>Trauma-Sensitive Case Study</strong></td>
-                            <td>Applied <strong>New Authority (Haim Omer)</strong> principles to address behavioral masking in SEN students. Focused on creating a consistent, safe environment through "relational trust" across the entire teaching team.</td>
+                            <td><strong>Relational Trust Reflection</strong></td>
+                            <td><div class="full-text-block">"Module 4 highlighted how important collaboration and trust are, but also how difficult they can be in practice. I recognised that strong relationships don’t automatically lead to effective collaboration, teams can feel safe but still avoid meaningful change. For me, it reinforced that reflection should not stay individual, but needs to be part of honest, sometimes uncomfortable dialogue within a team to really improve practice."</div></td>
                         </tr>
                         <tr>
-                            <td><strong>Socratic Practice</strong></td>
-                            <td>Utilizing "The unexamined life is not worth living" in a scientific context. Testing our teaching methods with the same rigor we apply to laboratory results.</td>
+                            <td><strong>Professional Connectivity</strong></td>
+                            <td>
+                                Connect with me on LinkedIn to follow this ongoing professional journey:
+                                <br>
+                                <a href="https://www.linkedin.com/in/jeroen-bruisten-80682010/" target="_blank" class="link-button mt-2">
+                                    <i class="fa-brands fa-linkedin"></i> LinkedIn: Jeroen Bruisten
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -282,60 +327,60 @@
         </div>
     </div>
 
-    <!-- Growth & Sources (Always Visible or grouped with Home) -->
+    <!-- Common Sections (Always Visible) -->
     <div id="common-footer">
-        <!-- Future Areas of Growth -->
         <section id="growth" class="py-20 bg-ib-blue text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl font-bold text-center mb-16">Future Horizons: Areas of Growth</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
                         <h3 class="text-xl font-bold mb-3">1. Deepening Inquiry</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Transitioning from teacher-led inquiry to student-driven investigations.</p>
+                        <p class="text-sm opacity-80 leading-relaxed">Transitioning from teacher-led inquiry to fully student-driven investigations in the Chemistry lab.</p>
                     </div>
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
-                        <h3 class="text-xl font-bold mb-3">2. Balancing Agency</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Refining scaffolds to support without limiting creative student thought.</p>
+                        <h3 class="text-xl font-bold mb-3">2. Agency vs. Scaffolding</h3>
+                        <p class="text-sm opacity-80 leading-relaxed">Refining the balance so that my "net" supports students without limiting their creative scientific thought.</p>
                     </div>
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
-                        <h3 class="text-xl font-bold mb-3">3. Visible Reflection</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Implementing digital journals for consistent laboratory reflections.</p>
+                        <h3 class="text-xl font-bold mb-3">3. Consistent Reflection</h3>
+                        <p class="text-sm opacity-80 leading-relaxed">Implementing routines like digital journals for continuous, visible reflection on lab work.</p>
                     </div>
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
                         <h3 class="text-xl font-bold mb-3">4. Strengthening PLCs</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Using data-driven feedback within professional communities to drive change.</p>
+                        <p class="text-sm opacity-80 leading-relaxed">Moving toward "Critical Professional Learning Communities" using data and honest feedback cycles.</p>
                     </div>
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
-                        <h3 class="text-xl font-bold mb-3">5. Challenging Assumptions</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Awareness of how worldview influences the presentation of scientific truths.</p>
+                        <h3 class="text-xl font-bold mb-3">5. Worldview Awareness</h3>
+                        <p class="text-sm opacity-80 leading-relaxed">Continuously challenging my own assumptions about how worldview influences the presentation of scientific truths.</p>
                     </div>
                     <div class="p-8 bg-white/10 rounded-3xl border border-white/20">
-                        <h3 class="text-xl font-bold mb-3">6. Interdisciplinary Analysis</h3>
-                        <p class="text-sm opacity-80 leading-relaxed">Connecting art analysis strengths to dissecting complex chemical models.</p>
+                        <h3 class="text-xl font-bold mb-3">6. Analytical Interdisciplinarity</h3>
+                        <p class="text-sm opacity-80 leading-relaxed">Using visual thinking strategies from my art background to help students dissect complex chemical models.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sources -->
         <section id="sources" class="bg-slate-900 text-white py-20">
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-4">Sources & References</h2>
-                <ul class="space-y-4 text-sm opacity-80 leading-relaxed">
+                <ul class="space-y-4 text-sm opacity-80">
                     <li><strong class="text-blue-400">International Baccalaureate (2024).</strong> <em>The IB Mission Statement & Diploma Programme Subject Guides.</em></li>
-                    <li><strong class="text-blue-400">Fenwick, A. (2022).</strong> <em>Social Bonding and Professional Learning Communities in Educational Settings.</em></li>
-                    <li><strong class="text-blue-400">Omer, H. (2010).</strong> <em>The New Authority: Family, School, and Community.</em> (Application in Dutch Special Education context).</li>
-                    <li><strong class="text-blue-400">Trauma-Sensitive Teaching.</strong> <em>Core Principles for inclusive education and relational trust.</em></li>
-                    <li><strong class="text-blue-400">RTTI System.</strong> <em>Teacher Literacy and Formative Assessment Framework (RTTI-system.pdf).</em></li>
-                    <li><strong class="text-blue-400">Vygotsky, L. S. (1978).</strong> <em>Mind in Society.</em> (Zone of Proximal Development & Scaffolding).</li>
+                    <li><strong class="text-blue-400">Omer, H. (2010).</strong> <em>The New Authority: Family, School, and Community.</em></li>
+                    <li><strong class="text-blue-400">RTTI System.</strong> <em>Teacher Literacy & Formative Assessment Framework.</em> <a href="https://docentplus.nl/wp-content/uploads/Teacher-literacy-formative-assessment-RTTI-system.pdf" target="_blank" class="text-blue-300 underline">Link</a></li>
+                    <li><strong class="text-blue-400">Vygotsky, L. S. (1978).</strong> <em>Mind in Society: The Development of Higher Psychological Processes.</em></li>
+                    <li><strong class="text-blue-400">PLC Collaboration.</strong> <em>Referencing the Week 4 PLC Study for Trauma-Sensitive Teaching.</em></li>
                 </ul>
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="bg-black text-white py-12">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="text-xs opacity-50 font-medium tracking-widest uppercase">Jeroen Bruisten | 2024 Portfolio</p>
+                <div class="flex justify-center gap-8 mb-8 text-2xl">
+                    <a href="https://www.linkedin.com/in/jeroen-bruisten-80682010/" target="_blank" class="hover:text-blue-400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:j.bruisten@gmail.com" class="hover:text-blue-400"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="text-xs opacity-50 uppercase tracking-widest">Jeroen Bruisten | 2024 Portfolio</p>
             </div>
         </footer>
     </div>
